@@ -6,7 +6,7 @@ void int main()
 	scanf("%d", &n);
 	int arr[n], sort[n];
 	
-	for(i = 0; i<n; i++)
+	for(i = 0; i<=n-1; i++)
 	{
 		scanf("%d", &arr[i]);
 	}
@@ -40,8 +40,17 @@ void int main()
 			
 	}
 	
+	printf("Ascending order:\n\n");
+
 	for(i = 0; i<n; i++)
 	{
 		printf("%d\t", sort[i]);
+	}     
+
+	printf("Ascending order:\n\n");
+
+	for(i = 0; i<n; i++)
+	{
+		printf("%d\t", sort[n-i-1]);
 	}     
 }
