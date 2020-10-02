@@ -2,21 +2,21 @@
 
 void int main()
 {
-	int n, i, j, c;
+	int ni, i, j, c;
 	scanf("%d", &n);
-	int arr[n], sort[n];
+	int arr[ni], sort[ni];
 	
-	for(i = 0; i<=n-1; i++)
+	for(i = 0; i<=ni-1; i++)
 	{
 		scanf("%d", &arr[i]);
 	}
 	
-	for(j = 0; j < n; j++)
+	for(j = 0; j < ni; j++)
 	{
 	
 		int min = arr[0], max = arr[0];
 	
-		for(i = 0; i < n; i++)
+		for(i = 0; i < ni; i++)
 		{
 			if(arr[i] > max)
 			{
@@ -25,7 +25,7 @@ void int main()
 		}
 		
 	
-		for(i = 0; i<n; i++)
+		for(i = 0; i<ni; i++)
 		{
 			if(arr[i] < min)
 			{
@@ -42,14 +42,14 @@ void int main()
 	
 	printf("Ascending order:\n\n");
 
-	for(i = 0; i<n; i++)
+	for(i = 0; i<ni; i++)
 	{
 		printf("%d\t", sort[i]);
 	}     
 
 	printf("Ascending order:\n\n");
 
-	for(i = 0; i<n; i++)
+	for(i = 0; i<ni; i++)
 	{
 		printf("%d\t", sort[n-i-1]);
 	}     
